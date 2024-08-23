@@ -13,7 +13,7 @@ This is a web application built with [Flask](https://flask.palletsprojects.com/)
 - Unit testing using `unittest`
 
 ## Project Structure
-\`\`\`plaintext
+```
 TEST2/
 │
 ├── app/
@@ -43,7 +43,7 @@ TEST2/
 ├── app.py                     # Entry point of the application
 ├── requirements.txt           # Python dependencies
 └── .gitignore                 # Git ignore file
-\`\`\`
+```
 
 ## Installation
 
@@ -56,52 +56,51 @@ TEST2/
 
 1. **Clone the repository**:
 
-   \`\`\`bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-   \`\`\`
+    ```bash
+    git clone https://github.com/abidbe/test_python.git
+    cd test_python
+    ```
 
 2. **Create a virtual environment**:
 
-   \`\`\`bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   \`\`\`
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
 3. **Install dependencies**:
 
-   \`\`\`bash
-   pip install -r requirements.txt
-   \`\`\`
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-4. **Set up environment variables**:
-   Create a `.env` file in the root directory and add the following:
+4. **Set up environment variables**: Create a `.env` file in the root directory and add the following:
 
-   \`\`\`plaintext
-   SECRET_KEY=your-secret-key
-   JWT_SECRET_KEY=your-jwt-secret-key
-   DATABASE_URL=postgresql://username:password@localhost/your_database
-   \`\`\`
+    ```plaintext
+    SECRET_KEY=your-secret-key
+    JWT_SECRET_KEY=your-jwt-secret-key
+    DATABASE_URL=postgresql://username:password@localhost/your_database
+    ```
 
 5. **Initialize the database**:
 
-   \`\`\`bash
-   flask db init
-   flask db migrate
-   flask db upgrade
-   \`\`\`
+    ```bash
+    flask db init
+    flask db migrate
+    flask db upgrade
+    ```
 
 6. **Run the application**:
 
-   \`\`\`bash
-   python app.py
-   \`\`\`
+    ```bash
+    python app.py
+    ```
 
 7. **Run tests**:
 
-   \`\`\`bash
-   python -m unittest discover tests
-   \`\`\`
+    ```bash
+    python -m unittest discover tests
+    ```
 
 ## Usage
 Once the application is running, you can access the API endpoints via a tool like Postman or cURL.
